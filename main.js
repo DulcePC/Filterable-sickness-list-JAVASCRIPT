@@ -18,12 +18,43 @@ function quitarBackground(){
     
 }*/
 
-//(prueba 2 con global)cambiar los colores del background cuando este es clickeado por el usuario
+//(prueba 2 con global)cambiar los colores del background cuando este le pasa el cursor al div por el usuario
 $(document).ready(function(){
-    $("div.cambioColor").mouseenter(function(){
-        $("div.cambioColor").css("background-color", "#ff80ab");
+    $("li.cambioColor").mouseenter(function(){
+        $("li.cambioColor").css("background-color", "#ff80ab");
     });
-    $("div.cambioColor").mouseleave(function(){
-        $("div.cambioColor").css("background-color", "lightgray");
+    $("li.cambioColor").mouseleave(function(){
+        $("li.cambioColor").css("background-color", "transparent");
     });
 });
+
+
+let filterInput = document.getElementById('filterInput');
+filterInput.addEventListener('keyup', filterNames);
+
+function filterNames(){
+
+    //tomamos los valors escritos en el input 
+   let filterValue = document.getElementById('filterInput').value.toUpperCase();
+   console.log();
+   //tomamos el ul
+    let ul = document.getElementById('names');
+    //todos items
+    let li = ul.querySelectorAll('li.collection-item');
+    for(let i = 0; i < li.length; i++){
+        //todos lo que esta en <a>
+        let a = li[i].getElementsByTagName('a')[0];
+        /*tomamos todo lo que esta en la etiquetas <a> HTML no importa si esta en mayuscula y con el
+        indexOf delvolvemos la posicion de la primera aparecion de un valor especificado en una cadena, -1 significa
+        que si no encuentra devolvera lo siguiente*/
+        
+        if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+            li[i].style.display = '';
+        }else{
+            //si no se encuentra en li lo que buscamos pues no devulveve nada y simplemente devuelve los collection
+            li[i].style.display = 'none';
+
+        }
+    }
+
+}

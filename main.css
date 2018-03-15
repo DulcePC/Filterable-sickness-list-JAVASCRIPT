@@ -7,3 +7,11 @@ body{
 .borrarHr{
     border-bottom: 0px;
 }
+.cambioColor{
+    text-decoration: none;
+    color: black;
+
+}
+.collection-item{
+    background-color: red;
+}
