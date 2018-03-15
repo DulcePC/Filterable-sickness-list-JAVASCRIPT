@@ -20,10 +20,10 @@ function quitarBackground(){
 
 //(prueba 2 con global)cambiar los colores del background cuando este es clickeado por el usuario
 $(document).ready(function(){
-    $("div.prueba").mouseenter(function(){
-        $("div.prueba").css("background-color", "#ff80ab");
+    $("div.cambioColor").mouseenter(function(){
+        $("div.cambioColor").css("background-color", "#ff80ab");
     });
-    $("div.prueba").mouseleave(function(){
-        $("div.prueba").css("background-color", "lightgray");
+    $("div.cambioColor").mouseleave(function(){
+        $("div.cambioColor").css("background-color", "lightgray");
     });
 });

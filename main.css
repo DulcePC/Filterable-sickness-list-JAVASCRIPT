@@ -4,3 +4,6 @@ body{
 .titulo{
     font-size: 30px;
 }
+.borrarHr{
+    border-bottom: 0px;
+}
