@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+
+    <!--icono-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align flow-text titulo">
+            Busca tu enfermedad
+        </h1>
+        <i class="material-icons left">search</i>
+        <input type="text" id="filterInput" placeholder="Escribe la enfermedad aqui">
+        
+        <ul id="names" class="collection with-header collapsible">
+            <li class="collection-header"><h5>A</h5></li>
+            <li class="collection-item"><a href="#">Anemia</a></li>
+
+            <li class="collection-item dropdown-trigger" href='#' data-activates='dropdown1'><a>Aneurisma</a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Molestias en la deglución</a></li>
+                <li><a href="#!">Tos</a></li>
+                </ul>
+
+
+            <li class="collection-item "><a href="#">Alitas</a></li>
+            <li class="collection-item"><a href="#">Albondigas</a></li>
+            <li class="collection-header"><h5>B</h5></li>
+            <li class="collection-item"><a href="#">Burritos</a></li>
+            <li class="collection-item"><a href="#">Brocoli</a></li>
+            <li class="collection-item"><a href="#">Bizcocho</a></li>
+            <li class="collection-item"><a href="#">Banana</a></li>
+            <li class="collection-header"><h5>C</h5></li>
+            <li class="collection-item"><a href="#">Carne</a></li>
+            <li class="collection-item"><a href="#">Camarones</a></li>
+            <li class="collection-item"><a href="#">Calabaza</a></li>
+
+            <li class="collection-header"><h5>D</h5></li>
+
+            <li class="collection-item">
+                <div class="collapsible-header">Dulce</div>
+                <p class="collapsible-body pink accent-1">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="collection-item">
+                <div class="collapsible-header prueba">Dorito</div>
+                <p class="collapsible-body pink accent-1">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="collection-item"><a href="#">Duraznos</a></li>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="main.js"></script>
+</html>
