@@ -20,11 +20,11 @@ function quitarBackground(){
 
 //(prueba 2 con global)cambiar los colores del background cuando este le pasa el cursor al div por el usuario
 $(document).ready(function(){
-    $("li.cambioColor").mouseenter(function(){
-        $("li.cambioColor").css("background-color", "#ff80ab");
+    $("div.cambioColor").mouseenter(function(){
+        $("div.cambioColor").css("background-color", "#ff80ab");
     });
-    $("li.cambioColor").mouseleave(function(){
-        $("li.cambioColor").css("background-color", "transparent");
+    $("div.cambioColor").mouseleave(function(){
+        $("div.cambioColor").css("background-color", "transparent");
     });
 });
 
