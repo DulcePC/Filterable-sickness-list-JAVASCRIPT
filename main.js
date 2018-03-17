@@ -19,16 +19,18 @@ function quitarBackground(){
 }*/
 
 //(prueba 2 con global)cambiar los colores del background cuando este le pasa el cursor al div por el usuario
-$(document).ready(function(){
+
+/*$(document).ready(function(){
     $("div.cambioColor").mouseenter(function(){
-        $("div.cambioColor").css("background-color", "#ff80ab");
+        $("div.cambioColor",this).css("background-color", "#353b4b");
+
     });
     $("div.cambioColor").mouseleave(function(){
         $("div.cambioColor").css("background-color", "transparent");
     });
-});
+});*/
 
-
+//EL BUSCADOR!
 let filterInput = document.getElementById('filterInput');
 filterInput.addEventListener('keyup', filterNames);
 

@@ -12,3 +12,16 @@ body{
     color: black;
 
 }
+.cambioColor:hover{
+    background-color: #e0e0e0;
+
+}
+h5{
+    color:white;
+}
+.collapsible-body{
+    font-size: 17px;
+}
+.btn-small{
+    background-color: #353b4b;
+}
