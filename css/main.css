@@ -1,27 +1,32 @@
-body{
+body {
     background-color: #f6f7f9;
 }
-.titulo{
+
+.titulo {
     font-size: 30px;
 }
-.borrarHr{
+
+.borrarHr {
     border-bottom: 0px;
 }
-.cambioColor{
+
+.cambioColor {
     text-decoration: none;
     color: black;
-
 }
-.cambioColor:hover{
+
+.cambioColor:hover {
     background-color: #e0e0e0;
+}
 
+h5 {
+    color: white;
 }
-h5{
-    color:white;
-}
-.collapsible-body{
+
+.collapsible-body {
     font-size: 17px;
 }
-.btn-small{
+
+.btn-small {
     background-color: #353b4b;
 }
